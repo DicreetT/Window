@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>delicious Dom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- overlay para iOS/safari: pide un toque para iniciar audio -->
+  <div id="enter" class="enter" onclick="startPrize()">
+    <div>tap to enter</div>
+  </div>
+
+  <div class="scanlines"></div>
+
+  <main class="stage">
+    <h1 id="type" class="type"></h1><span class="cursor" aria-hidden="true"></span>
+
+    <!-- imagen del premio (pon tu propia imagen en img/prize.jpg) -->
+    <img id="prize" class="prize hidden" src="img/prize.jpg" alt="for Dom" />
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
